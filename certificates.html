@@ -1,679 +1,679 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Certifications</title><style>
-/* cspell:disable-file */
-/* webkit printing magic: print all background colors */
-/* html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-} */
-
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-@media only screen {
-	body {
-		margin: 2em auto;
-		max-width: 900px;
-		color: rgb(55, 53, 47);
+	/* cspell:disable-file */
+	/* webkit printing magic: print all background colors */
+	/* html {
+		-webkit-print-color-adjust: exact;
 	}
-}
-
-body {
-	line-height: 1.5;
-	white-space: pre-wrap;
-}
-
-a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
-}
-
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
-}
-
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
-}
-
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
-}
-
-h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-}
-
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
-
-.callout {
-	border-radius: 3px;
-	padding: 1rem;
-}
-
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
-
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
-
-mark {
-	background-color: transparent;
-}
-
-.indented {
-	padding-left: 1.5em;
-}
-
-hr {
-	background: transparent;
-	display: block;
-	width: 100%;
-	height: 1px;
-	visibility: visible;
-	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
-}
-
-img {
-	max-width: 100%;
-}
-
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
-	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.column-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.column {
-	padding: 0 1em;
-}
-
-.column:first-child {
-	padding-left: 0;
-}
-
-.column:last-child {
-	padding-right: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-	border-collapse: collapse;
-}
-
-table {
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	padding-inline-start: 0;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-.page-description {
-    margin-bottom: 2em;
-}
-
-.simple-table {
-	margin-top: 1em;
-	font-size: 0.875rem;
-	empty-cells: show;
-}
-.simple-table td {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table th {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table-header-color {
-	background: rgb(247, 246, 243);
-	color: black;
-}
-.simple-table-header {
-	font-weight: 500;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-block;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	max-height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code-wrap {
-	white-space: pre-wrap;
-	word-break: break-all;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1.25em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-.bookmark {
-	text-decoration: none;
-	max-height: 8em;
-	padding: 0;
-	display: flex;
-	width: 100%;
-	align-items: stretch;
-}
-
-.bookmark-title {
-	font-size: 0.85em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 1.75em;
-	white-space: nowrap;
-}
-
-.bookmark-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.bookmark-info {
-	flex: 4 1 180px;
-	padding: 12px 14px 14px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.bookmark-image {
-	width: 33%;
-	flex: 1 1 180px;
-	display: block;
-	position: relative;
-	object-fit: cover;
-	border-radius: 1px;
-}
-
-.bookmark-description {
-	color: rgba(55, 53, 47, 0.6);
-	font-size: 0.75em;
-	overflow: hidden;
-	max-height: 4.5em;
-	word-break: break-word;
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	margin-top: 0.25em;
-}
-
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
-.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
-.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
-.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
-.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
-.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
-.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.highlight-default {
-	color: rgba(55, 53, 47, 1);
-}
-.highlight-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(120, 119, 116, 1);
-}
-.highlight-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(159, 107, 83, 1);
-}
-.highlight-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(217, 115, 13, 1);
-}
-.highlight-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 145, 47, 1);
-}
-.highlight-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(68, 131, 97, 1);
-}
-.highlight-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(51, 126, 169, 1);
-}
-.highlight-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(144, 101, 176, 1);
-}
-.highlight-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.highlight-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(212, 76, 71, 1);
-}
-.highlight-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.highlight-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.highlight-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.highlight-yellow_background {
-	background: rgba(251, 243, 219, 1);
-}
-.highlight-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.highlight-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.highlight-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.highlight-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.highlight-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(120, 119, 116, 1);
-}
-.block-color-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(159, 107, 83, 1);
-}
-.block-color-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(217, 115, 13, 1);
-}
-.block-color-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 145, 47, 1);
-}
-.block-color-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(68, 131, 97, 1);
-}
-.block-color-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(51, 126, 169, 1);
-}
-.block-color-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(144, 101, 176, 1);
-}
-.block-color-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.block-color-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(212, 76, 71, 1);
-}
-.block-color-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.block-color-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.block-color-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.block-color-yellow_background {
-	background: rgba(251, 243, 219, 1);
-}
-.block-color-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.block-color-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.block-color-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.block-color-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.block-color-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
-.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
-.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
-.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
-.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
-.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
-.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
-.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
-.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
-.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
-.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
-.select-value-color-pageGlass { background-color: undefined; }
-.select-value-color-washGlass { background-color: undefined; }
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
+	* {
+		box-sizing: border-box;
+		-webkit-print-color-adjust: exact;
+	} */
 	
-</style></head><body><article id="bb9f19b9-1e85-49cf-896a-ed4832b3223d" class="page sans"><header><h1 class="page-title">Certifications</h1><p class="page-description"></p></header><div class="page-body"><hr id="b3dfe358-d6cf-4106-8b39-1d8206a0e16e"/><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Cybersecurity(PCCET) - Beacon Palo Alto Networks</summary><div class="indented"><p id="b85a090f-8727-4326-a943-531c94f7158d" class="">Introduction to Cybersecurity</p><figure id="45bde4c1-84b0-4885-b497-0b3d9b4455da"><a href="https://beacon.paloaltonetworks.com/student/award/WeH8qQwXMZas7ZTWoCgvrN8b" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Beacon</div></div><div class="bookmark-href"><img src="https://cdn.exceedlms.com/uploads/organizations/favicons/2738/large/image__285_29.png?1585088185&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZXhjZWVkbG1zLmNvbS91cGxvYWRzL29yZ2FuaXphdGlvbnMvZmF2aWNvbnMvMjczOC9sYXJnZS9pbWFnZV9fMjg1XzI5LnBuZz8xNTg1MDg4MTg1IiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjg2NzExNzA0fX19XX0_&amp;Signature=eOmKIxzeYcOrrORZEgHQ12O7JbPK8GobMVOcWO-sQAlFAyl9-TwC3wzbOmamFOaE0gpoJy-huoZHyqeSMnJHaepH4E~68TPJbYMAbfgfskr~wYQB4jyP1GgeZAihkRnhe80sMhCEsFmuScLK~oobUcWif~hQEsy8xcKzNmfCPOUeRC31HKwns6JVJnXhB6bz7VdQ4KNMgIg-aOPiHpRlOvYbZ9hwSbaQH7GR8vphAizZk5tw3VIGYFMWlMhpWbovD7h-eB4w8hplqA-yEEIGh8~mm4K~ZIAZ7ODollDYaoo-6hvsDyhpsuzI7p3uKMxeE2I5~vIE2L8UFfcNdyD7yw__&amp;Key-Pair-Id=APKAJINUZDMKZJI5I6DA" class="icon bookmark-icon"/>https://beacon.paloaltonetworks.com/student/award/WeH8qQwXMZas7ZTWoCgvrN8b</div></div><img src="https://exceed-primary-production-main.s3.amazonaws.com/uploads/organizations/open_graph_images/2738/full/beacon-orange.png" class="bookmark-image"/></a></figure><p id="14f76949-b8d3-4658-b555-f5b410913b3f" class="">Fundamentals of Network Security</p><figure id="d2c655ea-745c-4b25-8ba1-debdb64f4322"><a href="https://beacon.paloaltonetworks.com/student/award/jK8xpFmr5r9b46sGg2tgFtqt" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Beacon</div></div><div class="bookmark-href"><img src="https://cdn.exceedlms.com/uploads/organizations/favicons/2738/large/image__285_29.png?1585088185&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZXhjZWVkbG1zLmNvbS91cGxvYWRzL29yZ2FuaXphdGlvbnMvZmF2aWNvbnMvMjczOC9sYXJnZS9pbWFnZV9fMjg1XzI5LnBuZz8xNTg1MDg4MTg1IiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjg2NzExNzA0fX19XX0_&amp;Signature=eOmKIxzeYcOrrORZEgHQ12O7JbPK8GobMVOcWO-sQAlFAyl9-TwC3wzbOmamFOaE0gpoJy-huoZHyqeSMnJHaepH4E~68TPJbYMAbfgfskr~wYQB4jyP1GgeZAihkRnhe80sMhCEsFmuScLK~oobUcWif~hQEsy8xcKzNmfCPOUeRC31HKwns6JVJnXhB6bz7VdQ4KNMgIg-aOPiHpRlOvYbZ9hwSbaQH7GR8vphAizZk5tw3VIGYFMWlMhpWbovD7h-eB4w8hplqA-yEEIGh8~mm4K~ZIAZ7ODollDYaoo-6hvsDyhpsuzI7p3uKMxeE2I5~vIE2L8UFfcNdyD7yw__&amp;Key-Pair-Id=APKAJINUZDMKZJI5I6DA" class="icon bookmark-icon"/>https://beacon.paloaltonetworks.com/student/award/jK8xpFmr5r9b46sGg2tgFtqt</div></div><img src="https://exceed-primary-production-main.s3.amazonaws.com/uploads/organizations/open_graph_images/2738/full/beacon-orange.png" class="bookmark-image"/></a></figure><p id="3fd678eb-4d42-4a81-96f3-1b6d896adee1" class="">Fundamentals of Cloud Security</p><figure id="b8f5b593-6752-4f3c-a858-f213817663c2"><a href="https://beacon.paloaltonetworks.com/student/award/ekdwiF33LA6HbRkL8tJehKmm" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Beacon</div></div><div class="bookmark-href"><img src="https://cdn.exceedlms.com/uploads/organizations/favicons/2738/large/image__285_29.png?1585088185&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZXhjZWVkbG1zLmNvbS91cGxvYWRzL29yZ2FuaXphdGlvbnMvZmF2aWNvbnMvMjczOC9sYXJnZS9pbWFnZV9fMjg1XzI5LnBuZz8xNTg1MDg4MTg1IiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjg2NzExNzA0fX19XX0_&amp;Signature=eOmKIxzeYcOrrORZEgHQ12O7JbPK8GobMVOcWO-sQAlFAyl9-TwC3wzbOmamFOaE0gpoJy-huoZHyqeSMnJHaepH4E~68TPJbYMAbfgfskr~wYQB4jyP1GgeZAihkRnhe80sMhCEsFmuScLK~oobUcWif~hQEsy8xcKzNmfCPOUeRC31HKwns6JVJnXhB6bz7VdQ4KNMgIg-aOPiHpRlOvYbZ9hwSbaQH7GR8vphAizZk5tw3VIGYFMWlMhpWbovD7h-eB4w8hplqA-yEEIGh8~mm4K~ZIAZ7ODollDYaoo-6hvsDyhpsuzI7p3uKMxeE2I5~vIE2L8UFfcNdyD7yw__&amp;Key-Pair-Id=APKAJINUZDMKZJI5I6DA" class="icon bookmark-icon"/>https://beacon.paloaltonetworks.com/student/award/ekdwiF33LA6HbRkL8tJehKmm</div></div><img src="https://exceed-primary-production-main.s3.amazonaws.com/uploads/organizations/open_graph_images/2738/full/beacon-orange.png" class="bookmark-image"/></a></figure><p id="da15b8a5-b619-4469-9358-41cc32a4f6ab" class="">Fundamentals of SOC (Security Operations Center)</p><figure id="a0bb6a74-5124-46f5-9684-1c5baba19006"><a href="https://beacon.paloaltonetworks.com/student/award/qDoc3bXY9BktA9T6RbwkaQmb" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Beacon</div></div><div class="bookmark-href"><img src="https://cdn.exceedlms.com/uploads/organizations/favicons/2738/large/image__285_29.png?1585088185&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZXhjZWVkbG1zLmNvbS91cGxvYWRzL29yZ2FuaXphdGlvbnMvZmF2aWNvbnMvMjczOC9sYXJnZS9pbWFnZV9fMjg1XzI5LnBuZz8xNTg1MDg4MTg1IiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjg2NzExNzA0fX19XX0_&amp;Signature=eOmKIxzeYcOrrORZEgHQ12O7JbPK8GobMVOcWO-sQAlFAyl9-TwC3wzbOmamFOaE0gpoJy-huoZHyqeSMnJHaepH4E~68TPJbYMAbfgfskr~wYQB4jyP1GgeZAihkRnhe80sMhCEsFmuScLK~oobUcWif~hQEsy8xcKzNmfCPOUeRC31HKwns6JVJnXhB6bz7VdQ4KNMgIg-aOPiHpRlOvYbZ9hwSbaQH7GR8vphAizZk5tw3VIGYFMWlMhpWbovD7h-eB4w8hplqA-yEEIGh8~mm4K~ZIAZ7ODollDYaoo-6hvsDyhpsuzI7p3uKMxeE2I5~vIE2L8UFfcNdyD7yw__&amp;Key-Pair-Id=APKAJINUZDMKZJI5I6DA" class="icon bookmark-icon"/>https://beacon.paloaltonetworks.com/student/award/qDoc3bXY9BktA9T6RbwkaQmb</div></div><img src="https://exceed-primary-production-main.s3.amazonaws.com/uploads/organizations/open_graph_images/2738/full/beacon-orange.png" class="bookmark-image"/></a></figure><figure id="3822bc65-76f2-4b7f-94ad-c2c742755a19"><a href="https://beacon.paloaltonetworks.com/student/award/uztupzgENnUWQCDLpSayXScs" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Beacon</div></div><div class="bookmark-href"><img src="https://cdn.exceedlms.com/uploads/organizations/favicons/2738/large/image__285_29.png?1585088185&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZXhjZWVkbG1zLmNvbS91cGxvYWRzL29yZ2FuaXphdGlvbnMvZmF2aWNvbnMvMjczOC9sYXJnZS9pbWFnZV9fMjg1XzI5LnBuZz8xNTg1MDg4MTg1IiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjg2NzExNzA0fX19XX0_&amp;Signature=eOmKIxzeYcOrrORZEgHQ12O7JbPK8GobMVOcWO-sQAlFAyl9-TwC3wzbOmamFOaE0gpoJy-huoZHyqeSMnJHaepH4E~68TPJbYMAbfgfskr~wYQB4jyP1GgeZAihkRnhe80sMhCEsFmuScLK~oobUcWif~hQEsy8xcKzNmfCPOUeRC31HKwns6JVJnXhB6bz7VdQ4KNMgIg-aOPiHpRlOvYbZ9hwSbaQH7GR8vphAizZk5tw3VIGYFMWlMhpWbovD7h-eB4w8hplqA-yEEIGh8~mm4K~ZIAZ7ODollDYaoo-6hvsDyhpsuzI7p3uKMxeE2I5~vIE2L8UFfcNdyD7yw__&amp;Key-Pair-Id=APKAJINUZDMKZJI5I6DA" class="icon bookmark-icon"/>https://beacon.paloaltonetworks.com/student/award/uztupzgENnUWQCDLpSayXScs</div></div><img src="https://exceed-primary-production-main.s3.amazonaws.com/uploads/organizations/open_graph_images/2738/full/beacon-orange.png" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Google Cybersecurity Professional Certificate - Coursera</summary><div class="indented"><p id="46604262-3757-4517-82a7-ecf0982061d8" class=""><strong>Foundations of Cybersecurity</strong></p><figure id="8379ba6d-b197-491b-814f-34edd3d8ec5e"><a href="https://coursera.org/verify/74EE55AQAQ4W" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Foundations of Cybersecurity</div><div class="bookmark-description">This certificate verifies my successful completion of Google&#x27;s &quot;Foundations of Cybersecurity&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/74EE55AQAQ4W</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~74EE55AQAQ4W/CERTIFICATE_LANDING_PAGE~74EE55AQAQ4W.jpeg" class="bookmark-image"/></a></figure><p id="b1a2e7c0-3209-4daf-8606-ddb0fc788f71" class=""><strong>Play It Safe: Manage Security Risks</strong></p><figure id="f6b58a4b-711e-4c8f-b523-df41261c5ecd"><a href="https://coursera.org/verify/QMLDJDVXXXDC" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Play It Safe: Manage Security Risks</div><div class="bookmark-description">This certificate verifies my successful completion of Google&#x27;s &quot;Play It Safe: Manage Security Risks&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/QMLDJDVXXXDC</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~QMLDJDVXXXDC/CERTIFICATE_LANDING_PAGE~QMLDJDVXXXDC.jpeg" class="bookmark-image"/></a></figure><p id="d0f44cbb-3138-4151-ad1f-3928837666fd" class=""><strong>Connect and Protect: Networks and Network Security</strong></p><figure id="62ff5107-a355-4f8d-8eab-94d55c725042"><a href="https://coursera.org/verify/NEKSNNSZFJQ4" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Connect and Protect: Networks and Network Security</div><div class="bookmark-description">This certificate verifies my successful completion of Google&#x27;s &quot;Connect and Protect: Networks and Network Security&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/NEKSNNSZFJQ4</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~NEKSNNSZFJQ4/CERTIFICATE_LANDING_PAGE~NEKSNNSZFJQ4.jpeg" class="bookmark-image"/></a></figure><p id="b045b8ea-2f34-4531-a6d9-187f3da6cb8c" class=""><strong>Tools of the Trade: Linux and SQL</strong></p><figure id="9f5a8360-794a-49a6-be80-bada627b3f41"><a href="https://coursera.org/verify/MU7TXHJRVZTF" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Tools of the Trade: Linux and SQL</div><div class="bookmark-description">This certificate verifies my successful completion of Google&#x27;s &quot;Tools of the Trade: Linux and SQL&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/MU7TXHJRVZTF</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~MU7TXHJRVZTF/CERTIFICATE_LANDING_PAGE~MU7TXHJRVZTF.jpeg" class="bookmark-image"/></a></figure><p id="c8c0acdb-6ebb-4ba5-a82e-93918fb55aa6" class=""><strong>Assets, Threats, and Vulnerabilities</strong></p><figure id="6c8baea1-5d41-458e-bf12-9db034f9c8fd"><a href="https://coursera.org/verify/ZCRVMFPBR72L" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Assets, Threats, and Vulnerabilities</div><div class="bookmark-description">This certificate verifies my successful completion of Google&#x27;s &quot;Assets, Threats, and Vulnerabilities&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/ZCRVMFPBR72L</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~ZCRVMFPBR72L/CERTIFICATE_LANDING_PAGE~ZCRVMFPBR72L.jpeg" class="bookmark-image"/></a></figure><p id="aac092f5-3916-4938-9a9c-1d3e825f3b05" class="">
-</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Decryption with Python - Coursera</summary><div class="indented"><figure id="69912b0f-8baf-41d2-b406-6aab17923ff2"><a href="https://coursera.org/verify/23KBXPP9NUAN" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Decryption with Python</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Decryption with Python&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/23KBXPP9NUAN</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~23KBXPP9NUAN/CERTIFICATE_LANDING_PAGE~23KBXPP9NUAN.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Introduction to Docker: Build Your Own Portfolio Site - Coursera</summary><div class="indented"><figure id="fcc53d23-3a0b-4d38-88ee-3ec444fa9811"><a href="https://coursera.org/verify/M4YHPSQM97BM" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Introduction to Docker: Build Your Own Portfolio Site</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Introduction to Docker: Build Your Own Portfolio Site&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/M4YHPSQM97BM</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~M4YHPSQM97BM/CERTIFICATE_LANDING_PAGE~M4YHPSQM97BM.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Build React Website - Coursera</summary><div class="indented"><figure id="55337b49-e5fe-4c44-b8b0-1b7cc3c1e2e9"><a href="https://coursera.org/verify/Z3T4MQPZZ57N" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Build Your First React Website</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Build Your First React Website&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/Z3T4MQPZZ57N</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~Z3T4MQPZZ57N/CERTIFICATE_LANDING_PAGE~Z3T4MQPZZ57N.jpeg" class="bookmark-image"/></a></figure><figure id="da852491-b6f9-4a5d-be5e-5d2680340574"><a href="https://coursera.org/verify/L7B7H9KT5692" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Build Your First React Website (Part II)</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Build Your First React Website (Part II)&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/L7B7H9KT5692</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~L7B7H9KT5692/CERTIFICATE_LANDING_PAGE~L7B7H9KT5692.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3"><strong>Mining Quality Prediction Using Machine &amp; Deep Learning - Coursera</strong></summary><div class="indented"><figure id="fcfceb5e-31c5-47cd-9a30-f40f7c8c9c88"><a href="https://coursera.org/verify/4TSV35ERRDPF" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Mining Quality Prediction Using Machine &amp; Deep Learning</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Mining Quality Prediction Using Machine &amp; Deep Learning&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/4TSV35ERRDPF</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~4TSV35ERRDPF/CERTIFICATE_LANDING_PAGE~4TSV35ERRDPF.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Data Visualization using Matplotlib and Seaborn in Python - Coursera</summary><div class="indented"><figure id="63232cb2-af43-486b-a4ee-d4f48beb8bdb"><a href="https://coursera.org/verify/DQGLPWDPXQXD" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Python for Data Visualization: Matplotlib &amp; Seaborn</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Python for Data Visualization: Matplotlib &amp; Seaborn&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/DQGLPWDPXQXD</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~DQGLPWDPXQXD/CERTIFICATE_LANDING_PAGE~DQGLPWDPXQXD.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Exploratory vs Confirmatory Data Analysis using
-Python - Coursera</summary><div class="indented"><figure id="ed77921d-29bc-42d9-89c0-db65313a3532"><a href="https://coursera.org/verify/BTD8BRU4BEJQ" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Exploratory vs Confirmatory data analysis using Python</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Exploratory vs Confirmatory data analysis using Python&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/BTD8BRU4BEJQ</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~BTD8BRU4BEJQ/CERTIFICATE_LANDING_PAGE~BTD8BRU4BEJQ.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Mastering Data Analysis with Pandas in Python - Coursera</summary><div class="indented"><figure id="9b0929ce-f42a-4a5d-8ec1-8e8d87b8662f"><a href="https://coursera.org/verify/22JFR3VPEH24" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Mastering Data Analysis with Pandas</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Mastering Data Analysis with Pandas&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/22JFR3VPEH24</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~22JFR3VPEH24/CERTIFICATE_LANDING_PAGE~22JFR3VPEH24.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Encryption and Decryption using C++ - Coursera</summary><div class="indented"><figure id="76e23151-019f-41bb-a04f-5765a8dd61f8"><a href="https://coursera.org/verify/UA7B8E9ED8KU" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Encryption and Decryption using C++</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Encryption and Decryption using C++&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/UA7B8E9ED8KU</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~UA7B8E9ED8KU/CERTIFICATE_LANDING_PAGE~UA7B8E9ED8KU.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Shell Scripting with Bash: Basics - Coursera</summary><div class="indented"><figure id="9cab0cfc-0c2a-42f5-b519-43d55fd1d8c4"><a href="https://coursera.org/verify/SZQYZPDQ8YLV" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Shell Scripting with Bash: Basics</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Shell Scripting with Bash: Basics&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/SZQYZPDQ8YLV</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~SZQYZPDQ8YLV/CERTIFICATE_LANDING_PAGE~SZQYZPDQ8YLV.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Python Program From UST - Coursera</summary><div class="indented"><figure id="41df1db7-e74d-4023-b847-1f5637998f18"><a href="https://coursera.org/verify/LW3P64ZZY4Q7" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Create Your First Python Program From UST</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Create Your First Python Program From UST&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/LW3P64ZZY4Q7</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~LW3P64ZZY4Q7/CERTIFICATE_LANDING_PAGE~LW3P64ZZY4Q7.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Manage Your Versions with Git - Coursera</summary><div class="indented"><figure id="69af7714-9eca-4b4c-beb9-7a6858e070e8"><a href="https://coursera.org/verify/RX3PHNBCDSG2" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Manage Your Versions with Git (Part I)</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Manage Your Versions with Git (Part I)&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/RX3PHNBCDSG2</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~RX3PHNBCDSG2/CERTIFICATE_LANDING_PAGE~RX3PHNBCDSG2.jpeg" class="bookmark-image"/></a></figure><figure id="277eb40b-dc4a-43c3-a990-46d56e1f4791"><a href="https://coursera.org/verify/8M3G5TX268QF" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Manage Your Versions with Git (Part II)</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Manage Your Versions with Git (Part II)&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/8M3G5TX268QF</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~8M3G5TX268QF/CERTIFICATE_LANDING_PAGE~8M3G5TX268QF.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Game Development with JS - SoloLearn</summary><div class="indented"><figure id="10876461-e518-43dc-99b8-0ab8e1df12af"><a href="https://www.sololearn.com/certificates/CT-WEWBTSFX" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Sololearn: Learn to Code</div><div class="bookmark-description">Join Now to learn the basics or advance your existing skills</div></div><div class="bookmark-href"><img src="https://www.sololearn.com/Images/favicon.ico" class="icon bookmark-icon"/>https://www.sololearn.com/certificates/CT-WEWBTSFX</div></div><img src="https://api2.sololearn.com/v2/certificates/CT-WEWBTSFX/image/png" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Problem Solving - Hackerrank</summary><div class="indented"><p id="ebd388bf-adee-4a35-8374-38cc5abbb8d8" class="">Intermediate</p><figure id="2bd599ee-592c-4e46-b446-9549203fba32"><a href="https://www.hackerrank.com/certificates/37717a36afa2" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">HackerRank</div><div class="bookmark-description">Join over 16 million developers in solving code challenges on HackerRank, one of the best ways to prepare for programming interviews.</div></div><div class="bookmark-href"><img src="https://hrcdn.net/fcore/assets/favicon-ddc852f75a.png" class="icon bookmark-icon"/>https://www.hackerrank.com/certificates/37717a36afa2</div></div><img src="https://downloads.hackerrank.com/certificates/37717a36afa2" class="bookmark-image"/></a></figure><p id="0482cf75-b5a7-459d-a646-8cf334b64be5" class="">Basic</p><figure id="796b2c90-947f-45bd-8889-57637356b5d0"><a href="https://www.hackerrank.com/certificates/c6d5d073e714" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">HackerRank</div><div class="bookmark-description">Join over 16 million developers in solving code challenges on HackerRank, one of the best ways to prepare for programming interviews.</div></div><div class="bookmark-href"><img src="https://hrcdn.net/fcore/assets/favicon-ddc852f75a.png" class="icon bookmark-icon"/>https://www.hackerrank.com/certificates/c6d5d073e714</div></div><img src="https://downloads.hackerrank.com/certificates/c6d5d073e714" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3"><strong><strong>Git, GitHub &amp; Markdown Crash Course: Learn Git, GitHub &amp; MD - Udemy</strong></strong></summary><div class="indented"><figure id="f66f33aa-e9e9-45ff-9eea-af9587cdbd68"><a href="https://www.udemy.com/certificate/UC-fb32abbe-7030-4389-b98e-a0842271c401/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Udemy Course Completion Certificate</div><div class="bookmark-description">My course completion certificate for &quot;Git, GitHub &amp; Markdown Crash Course: Learn Git, GitHub &amp; MD&quot;</div></div><div class="bookmark-href"><img src="https://www.udemy.com/staticx/udemy/images/v7/apple-touch-icon.png" class="icon bookmark-icon"/>https://www.udemy.com/certificate/UC-fb32abbe-7030-4389-b98e-a0842271c401/</div></div><img src="https://udemy-certificate.s3.amazonaws.com/image/UC-fb32abbe-7030-4389-b98e-a0842271c401.jpg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Object Oriented Programming in C++ - Udemy</summary><div class="indented"><figure id="b1c1fb72-7bfa-4614-9327-0c792d17d514"><a href="https://www.udemy.com/certificate/UC-087cbd4a-222b-434d-ab15-863c0bdd65dc/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Udemy Course Completion Certificate</div><div class="bookmark-description">My course completion certificate for &quot;Object Oriented Programming in C++  &amp;  Interview Preparation&quot;</div></div><div class="bookmark-href"><img src="https://www.udemy.com/staticx/udemy/images/v7/apple-touch-icon.png" class="icon bookmark-icon"/>https://www.udemy.com/certificate/UC-087cbd4a-222b-434d-ab15-863c0bdd65dc/</div></div><img src="https://udemy-certificate.s3.amazonaws.com/image/UC-087cbd4a-222b-434d-ab15-863c0bdd65dc.jpg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">First Steps Into Public Speaking - Udemy</summary><div class="indented"><figure id="a751dc56-2fa6-4221-8287-e813d18d295b"><a href="https://www.udemy.com/certificate/UC-c140d0a3-2620-46d2-bad0-6714a835dfe6/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Udemy Course Completion Certificate</div><div class="bookmark-description">My course completion certificate for &quot;First Steps Into Public Speaking&quot;</div></div><div class="bookmark-href"><img src="https://www.udemy.com/staticx/udemy/images/v7/apple-touch-icon.png" class="icon bookmark-icon"/>https://www.udemy.com/certificate/UC-c140d0a3-2620-46d2-bad0-6714a835dfe6/</div></div><img src="https://udemy-certificate.s3.amazonaws.com/image/UC-c140d0a3-2620-46d2-bad0-6714a835dfe6.jpg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">The Complete C Programming Course for Beginners - Udemy</summary><div class="indented"><figure id="beb588ae-f541-4518-ac32-8af028d045ea"><a href="https://www.udemy.com/certificate/UC-90f6a139-f75b-4ae7-95c0-0b9d36dea113/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Udemy Course Completion Certificate</div><div class="bookmark-description">My course completion certificate for &quot;The Complete C Programming Course for Beginners&quot;</div></div><div class="bookmark-href"><img src="https://www.udemy.com/staticx/udemy/images/v7/apple-touch-icon.png" class="icon bookmark-icon"/>https://www.udemy.com/certificate/UC-90f6a139-f75b-4ae7-95c0-0b9d36dea113/</div></div><img src="https://udemy-certificate.s3.amazonaws.com/image/UC-90f6a139-f75b-4ae7-95c0-0b9d36dea113.jpg" class="bookmark-image"/></a></figure></div></details><p id="e164da6f-c961-48cc-83b3-23b1a4517377" class="">
-</p></div></article></body></html>
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	@media only screen {
+		body {
+			margin: 2em auto;
+			max-width: 900px;
+			color: rgb(55, 53, 47);
+		}
+	}
+	
+	body {
+		line-height: 1.5;
+		white-space: pre-wrap;
+	}
+	
+	a,
+	a.visited {
+		color: inherit;
+		text-decoration: underline;
+	}
+	
+	.pdf-relative-link-path {
+		font-size: 80%;
+		color: #444;
+	}
+	
+	h1,
+	h2,
+	h3 {
+		letter-spacing: -0.01em;
+		line-height: 1.2;
+		font-weight: 600;
+		margin-bottom: 0;
+	}
+	
+	.page-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		margin-top: 0;
+		margin-bottom: 0.75em;
+	}
+	
+	h1 {
+		font-size: 1.875rem;
+		margin-top: 1.875rem;
+	}
+	
+	h2 {
+		font-size: 1.5rem;
+		margin-top: 1.5rem;
+	}
+	
+	h3 {
+		font-size: 1.25rem;
+		margin-top: 1.25rem;
+	}
+	
+	.source {
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		padding: 1.5em;
+		word-break: break-all;
+	}
+	
+	.callout {
+		border-radius: 3px;
+		padding: 1rem;
+	}
+	
+	figure {
+		margin: 1.25em 0;
+		page-break-inside: avoid;
+	}
+	
+	figcaption {
+		opacity: 0.5;
+		font-size: 85%;
+		margin-top: 0.5em;
+	}
+	
+	mark {
+		background-color: transparent;
+	}
+	
+	.indented {
+		padding-left: 1.5em;
+	}
+	
+	hr {
+		background: transparent;
+		display: block;
+		width: 100%;
+		height: 1px;
+		visibility: visible;
+		border: none;
+		border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+	}
+	
+	img {
+		max-width: 100%;
+	}
+	
+	@media only print {
+		img {
+			max-height: 100vh;
+			object-fit: contain;
+		}
+	}
+	
+	@page {
+		margin: 1in;
+	}
+	
+	.collection-content {
+		font-size: 0.875rem;
+	}
+	
+	.column-list {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.column {
+		padding: 0 1em;
+	}
+	
+	.column:first-child {
+		padding-left: 0;
+	}
+	
+	.column:last-child {
+		padding-right: 0;
+	}
+	
+	.table_of_contents-item {
+		display: block;
+		font-size: 0.875rem;
+		line-height: 1.3;
+		padding: 0.125rem;
+	}
+	
+	.table_of_contents-indent-1 {
+		margin-left: 1.5rem;
+	}
+	
+	.table_of_contents-indent-2 {
+		margin-left: 3rem;
+	}
+	
+	.table_of_contents-indent-3 {
+		margin-left: 4.5rem;
+	}
+	
+	.table_of_contents-link {
+		text-decoration: none;
+		opacity: 0.7;
+		border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+	}
+	
+	table,
+	th,
+	td {
+		border: 1px solid rgba(55, 53, 47, 0.09);
+		border-collapse: collapse;
+	}
+	
+	table {
+		border-left: none;
+		border-right: none;
+	}
+	
+	th,
+	td {
+		font-weight: normal;
+		padding: 0.25em 0.5em;
+		line-height: 1.5;
+		min-height: 1.5em;
+		text-align: left;
+	}
+	
+	th {
+		color: rgba(55, 53, 47, 0.6);
+	}
+	
+	ol,
+	ul {
+		margin: 0;
+		margin-block-start: 0.6em;
+		margin-block-end: 0.6em;
+	}
+	
+	li > ol:first-child,
+	li > ul:first-child {
+		margin-block-start: 0.6em;
+	}
+	
+	ul > li {
+		list-style: disc;
+	}
+	
+	ul.to-do-list {
+		padding-inline-start: 0;
+	}
+	
+	ul.to-do-list > li {
+		list-style: none;
+	}
+	
+	.to-do-children-checked {
+		text-decoration: line-through;
+		opacity: 0.375;
+	}
+	
+	ul.toggle > li {
+		list-style: none;
+	}
+	
+	ul {
+		padding-inline-start: 1.7em;
+	}
+	
+	ul > li {
+		padding-left: 0.1em;
+	}
+	
+	ol {
+		padding-inline-start: 1.6em;
+	}
+	
+	ol > li {
+		padding-left: 0.2em;
+	}
+	
+	.mono ol {
+		padding-inline-start: 2em;
+	}
+	
+	.mono ol > li {
+		text-indent: -0.4em;
+	}
+	
+	.toggle {
+		padding-inline-start: 0em;
+		list-style-type: none;
+	}
+	
+	/* Indent toggle children */
+	.toggle > li > details {
+		padding-left: 1.7em;
+	}
+	
+	.toggle > li > details > summary {
+		margin-left: -1.1em;
+	}
+	
+	.selected-value {
+		display: inline-block;
+		padding: 0 0.5em;
+		background: rgba(206, 205, 202, 0.5);
+		border-radius: 3px;
+		margin-right: 0.5em;
+		margin-top: 0.3em;
+		margin-bottom: 0.3em;
+		white-space: nowrap;
+	}
+	
+	.collection-title {
+		display: inline-block;
+		margin-right: 1em;
+	}
+	
+	.page-description {
+		margin-bottom: 2em;
+	}
+	
+	.simple-table {
+		margin-top: 1em;
+		font-size: 0.875rem;
+		empty-cells: show;
+	}
+	.simple-table td {
+		height: 29px;
+		min-width: 120px;
+	}
+	
+	.simple-table th {
+		height: 29px;
+		min-width: 120px;
+	}
+	
+	.simple-table-header-color {
+		background: rgb(247, 246, 243);
+		color: black;
+	}
+	.simple-table-header {
+		font-weight: 500;
+	}
+	
+	time {
+		opacity: 0.5;
+	}
+	
+	.icon {
+		display: inline-block;
+		max-width: 1.2em;
+		max-height: 1.2em;
+		text-decoration: none;
+		vertical-align: text-bottom;
+		margin-right: 0.5em;
+	}
+	
+	img.icon {
+		border-radius: 3px;
+	}
+	
+	.user-icon {
+		width: 1.5em;
+		height: 1.5em;
+		border-radius: 100%;
+		margin-right: 0.5rem;
+	}
+	
+	.user-icon-inner {
+		font-size: 0.8em;
+	}
+	
+	.text-icon {
+		border: 1px solid #000;
+		text-align: center;
+	}
+	
+	.page-cover-image {
+		display: block;
+		object-fit: cover;
+		width: 100%;
+		max-height: 30vh;
+	}
+	
+	.page-header-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+	
+	.page-header-icon-with-cover {
+		margin-top: -0.72em;
+		margin-left: 0.07em;
+	}
+	
+	.page-header-icon img {
+		border-radius: 3px;
+	}
+	
+	.link-to-page {
+		margin: 1em 0;
+		padding: 0;
+		border: none;
+		font-weight: 500;
+	}
+	
+	p > .user {
+		opacity: 0.5;
+	}
+	
+	td > .user,
+	td > time {
+		white-space: nowrap;
+	}
+	
+	input[type="checkbox"] {
+		transform: scale(1.5);
+		margin-right: 0.6em;
+		vertical-align: middle;
+	}
+	
+	p {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+	
+	.image {
+		border: none;
+		margin: 1.5em 0;
+		padding: 0;
+		border-radius: 0;
+		text-align: center;
+	}
+	
+	.code,
+	code {
+		background: rgba(135, 131, 120, 0.15);
+		border-radius: 3px;
+		padding: 0.2em 0.4em;
+		border-radius: 3px;
+		font-size: 85%;
+		tab-size: 2;
+	}
+	
+	code {
+		color: #eb5757;
+	}
+	
+	.code {
+		padding: 1.5em 1em;
+	}
+	
+	.code-wrap {
+		white-space: pre-wrap;
+		word-break: break-all;
+	}
+	
+	.code > code {
+		background: none;
+		padding: 0;
+		font-size: 100%;
+		color: inherit;
+	}
+	
+	blockquote {
+		font-size: 1.25em;
+		margin: 1em 0;
+		padding-left: 1em;
+		border-left: 3px solid rgb(55, 53, 47);
+	}
+	
+	.bookmark {
+		text-decoration: none;
+		max-height: 8em;
+		padding: 0;
+		display: flex;
+		width: 100%;
+		align-items: stretch;
+	}
+	
+	.bookmark-title {
+		font-size: 0.85em;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		height: 1.75em;
+		white-space: nowrap;
+	}
+	
+	.bookmark-text {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.bookmark-info {
+		flex: 4 1 180px;
+		padding: 12px 14px 14px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+	.bookmark-image {
+		width: 33%;
+		flex: 1 1 180px;
+		display: block;
+		position: relative;
+		object-fit: cover;
+		border-radius: 1px;
+	}
+	
+	.bookmark-description {
+		color: rgba(55, 53, 47, 0.6);
+		font-size: 0.75em;
+		overflow: hidden;
+		max-height: 4.5em;
+		word-break: break-word;
+	}
+	
+	.bookmark-href {
+		font-size: 0.75em;
+		margin-top: 0.25em;
+	}
+	
+	.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+	.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+	.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+	.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+	.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+	.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+	.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+	.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+	.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+	.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+	.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+	.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+	.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+	.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+	.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+	.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+	.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+	.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+	.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+	.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+	.highlight-default {
+		color: rgba(55, 53, 47, 1);
+	}
+	.highlight-gray {
+		color: rgba(120, 119, 116, 1);
+		fill: rgba(120, 119, 116, 1);
+	}
+	.highlight-brown {
+		color: rgba(159, 107, 83, 1);
+		fill: rgba(159, 107, 83, 1);
+	}
+	.highlight-orange {
+		color: rgba(217, 115, 13, 1);
+		fill: rgba(217, 115, 13, 1);
+	}
+	.highlight-yellow {
+		color: rgba(203, 145, 47, 1);
+		fill: rgba(203, 145, 47, 1);
+	}
+	.highlight-teal {
+		color: rgba(68, 131, 97, 1);
+		fill: rgba(68, 131, 97, 1);
+	}
+	.highlight-blue {
+		color: rgba(51, 126, 169, 1);
+		fill: rgba(51, 126, 169, 1);
+	}
+	.highlight-purple {
+		color: rgba(144, 101, 176, 1);
+		fill: rgba(144, 101, 176, 1);
+	}
+	.highlight-pink {
+		color: rgba(193, 76, 138, 1);
+		fill: rgba(193, 76, 138, 1);
+	}
+	.highlight-red {
+		color: rgba(212, 76, 71, 1);
+		fill: rgba(212, 76, 71, 1);
+	}
+	.highlight-gray_background {
+		background: rgba(241, 241, 239, 1);
+	}
+	.highlight-brown_background {
+		background: rgba(244, 238, 238, 1);
+	}
+	.highlight-orange_background {
+		background: rgba(251, 236, 221, 1);
+	}
+	.highlight-yellow_background {
+		background: rgba(251, 243, 219, 1);
+	}
+	.highlight-teal_background {
+		background: rgba(237, 243, 236, 1);
+	}
+	.highlight-blue_background {
+		background: rgba(231, 243, 248, 1);
+	}
+	.highlight-purple_background {
+		background: rgba(244, 240, 247, 0.8);
+	}
+	.highlight-pink_background {
+		background: rgba(249, 238, 243, 0.8);
+	}
+	.highlight-red_background {
+		background: rgba(253, 235, 236, 1);
+	}
+	.block-color-default {
+		color: inherit;
+		fill: inherit;
+	}
+	.block-color-gray {
+		color: rgba(120, 119, 116, 1);
+		fill: rgba(120, 119, 116, 1);
+	}
+	.block-color-brown {
+		color: rgba(159, 107, 83, 1);
+		fill: rgba(159, 107, 83, 1);
+	}
+	.block-color-orange {
+		color: rgba(217, 115, 13, 1);
+		fill: rgba(217, 115, 13, 1);
+	}
+	.block-color-yellow {
+		color: rgba(203, 145, 47, 1);
+		fill: rgba(203, 145, 47, 1);
+	}
+	.block-color-teal {
+		color: rgba(68, 131, 97, 1);
+		fill: rgba(68, 131, 97, 1);
+	}
+	.block-color-blue {
+		color: rgba(51, 126, 169, 1);
+		fill: rgba(51, 126, 169, 1);
+	}
+	.block-color-purple {
+		color: rgba(144, 101, 176, 1);
+		fill: rgba(144, 101, 176, 1);
+	}
+	.block-color-pink {
+		color: rgba(193, 76, 138, 1);
+		fill: rgba(193, 76, 138, 1);
+	}
+	.block-color-red {
+		color: rgba(212, 76, 71, 1);
+		fill: rgba(212, 76, 71, 1);
+	}
+	.block-color-gray_background {
+		background: rgba(241, 241, 239, 1);
+	}
+	.block-color-brown_background {
+		background: rgba(244, 238, 238, 1);
+	}
+	.block-color-orange_background {
+		background: rgba(251, 236, 221, 1);
+	}
+	.block-color-yellow_background {
+		background: rgba(251, 243, 219, 1);
+	}
+	.block-color-teal_background {
+		background: rgba(237, 243, 236, 1);
+	}
+	.block-color-blue_background {
+		background: rgba(231, 243, 248, 1);
+	}
+	.block-color-purple_background {
+		background: rgba(244, 240, 247, 0.8);
+	}
+	.block-color-pink_background {
+		background: rgba(249, 238, 243, 0.8);
+	}
+	.block-color-red_background {
+		background: rgba(253, 235, 236, 1);
+	}
+	.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+	.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+	.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+	.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+	.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+	.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+	.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+	.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+	.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+	.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+	.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+	.select-value-color-pageGlass { background-color: undefined; }
+	.select-value-color-washGlass { background-color: undefined; }
+	
+	.checkbox {
+		display: inline-flex;
+		vertical-align: text-bottom;
+		width: 16;
+		height: 16;
+		background-size: 16px;
+		margin-left: 2px;
+		margin-right: 5px;
+	}
+	
+	.checkbox-on {
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+	}
+	
+	.checkbox-off {
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+	}
+		
+	</style></head><body><article id="bb9f19b9-1e85-49cf-896a-ed4832b3223d" class="page sans"><header><h1 class="page-title">Certifications</h1><p class="page-description"></p></header><div class="page-body"><hr id="b3dfe358-d6cf-4106-8b39-1d8206a0e16e"/><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Salesforce Developer Virtual Internship - Deloitte</summary><div class="indented"><figure id="c3ac5e4c-0d76-4416-b25c-f459ccdaef84"><a href="https://smartinternz.com/internships/salesforce_certificates/e40e1ddaec49ac457c9f675156190e18" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href">https://smartinternz.com/internships/salesforce_certificates/e40e1ddaec49ac457c9f675156190e18</div></div></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">AICTE Cybersecurity Virtual Internship</summary><div class="indented"><figure id="8e25f2b6-6f96-4573-a3d2-502911fa973e" class="image"><a href="Certifications%20bb9f19b91e8549cf896aed4832b3223d/Untitled.png"><img style="width:720px" src="imgs/Untitled.png"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Cybersecurity(PCCET) - Beacon Palo Alto Networks</summary><div class="indented"><p id="b85a090f-8727-4326-a943-531c94f7158d" class="">Introduction to Cybersecurity</p><figure id="45bde4c1-84b0-4885-b497-0b3d9b4455da"><a href="https://beacon.paloaltonetworks.com/student/award/WeH8qQwXMZas7ZTWoCgvrN8b" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Beacon</div></div><div class="bookmark-href"><img src="https://cdn.exceedlms.com/uploads/organizations/favicons/2738/large/image__285_29.png?1585088185&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZXhjZWVkbG1zLmNvbS91cGxvYWRzL29yZ2FuaXphdGlvbnMvZmF2aWNvbnMvMjczOC9sYXJnZS9pbWFnZV9fMjg1XzI5LnBuZz8xNTg1MDg4MTg1IiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjg2NzExNzA0fX19XX0_&amp;Signature=eOmKIxzeYcOrrORZEgHQ12O7JbPK8GobMVOcWO-sQAlFAyl9-TwC3wzbOmamFOaE0gpoJy-huoZHyqeSMnJHaepH4E~68TPJbYMAbfgfskr~wYQB4jyP1GgeZAihkRnhe80sMhCEsFmuScLK~oobUcWif~hQEsy8xcKzNmfCPOUeRC31HKwns6JVJnXhB6bz7VdQ4KNMgIg-aOPiHpRlOvYbZ9hwSbaQH7GR8vphAizZk5tw3VIGYFMWlMhpWbovD7h-eB4w8hplqA-yEEIGh8~mm4K~ZIAZ7ODollDYaoo-6hvsDyhpsuzI7p3uKMxeE2I5~vIE2L8UFfcNdyD7yw__&amp;Key-Pair-Id=APKAJINUZDMKZJI5I6DA" class="icon bookmark-icon"/>https://beacon.paloaltonetworks.com/student/award/WeH8qQwXMZas7ZTWoCgvrN8b</div></div><img src="https://exceed-primary-production-main.s3.amazonaws.com/uploads/organizations/open_graph_images/2738/full/beacon-orange.png" class="bookmark-image"/></a></figure><p id="14f76949-b8d3-4658-b555-f5b410913b3f" class="">Fundamentals of Network Security</p><figure id="d2c655ea-745c-4b25-8ba1-debdb64f4322"><a href="https://beacon.paloaltonetworks.com/student/award/jK8xpFmr5r9b46sGg2tgFtqt" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Beacon</div></div><div class="bookmark-href"><img src="https://cdn.exceedlms.com/uploads/organizations/favicons/2738/large/image__285_29.png?1585088185&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZXhjZWVkbG1zLmNvbS91cGxvYWRzL29yZ2FuaXphdGlvbnMvZmF2aWNvbnMvMjczOC9sYXJnZS9pbWFnZV9fMjg1XzI5LnBuZz8xNTg1MDg4MTg1IiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjg2NzExNzA0fX19XX0_&amp;Signature=eOmKIxzeYcOrrORZEgHQ12O7JbPK8GobMVOcWO-sQAlFAyl9-TwC3wzbOmamFOaE0gpoJy-huoZHyqeSMnJHaepH4E~68TPJbYMAbfgfskr~wYQB4jyP1GgeZAihkRnhe80sMhCEsFmuScLK~oobUcWif~hQEsy8xcKzNmfCPOUeRC31HKwns6JVJnXhB6bz7VdQ4KNMgIg-aOPiHpRlOvYbZ9hwSbaQH7GR8vphAizZk5tw3VIGYFMWlMhpWbovD7h-eB4w8hplqA-yEEIGh8~mm4K~ZIAZ7ODollDYaoo-6hvsDyhpsuzI7p3uKMxeE2I5~vIE2L8UFfcNdyD7yw__&amp;Key-Pair-Id=APKAJINUZDMKZJI5I6DA" class="icon bookmark-icon"/>https://beacon.paloaltonetworks.com/student/award/jK8xpFmr5r9b46sGg2tgFtqt</div></div><img src="https://exceed-primary-production-main.s3.amazonaws.com/uploads/organizations/open_graph_images/2738/full/beacon-orange.png" class="bookmark-image"/></a></figure><p id="3fd678eb-4d42-4a81-96f3-1b6d896adee1" class="">Fundamentals of Cloud Security</p><figure id="b8f5b593-6752-4f3c-a858-f213817663c2"><a href="https://beacon.paloaltonetworks.com/student/award/ekdwiF33LA6HbRkL8tJehKmm" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Beacon</div></div><div class="bookmark-href"><img src="https://cdn.exceedlms.com/uploads/organizations/favicons/2738/large/image__285_29.png?1585088185&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZXhjZWVkbG1zLmNvbS91cGxvYWRzL29yZ2FuaXphdGlvbnMvZmF2aWNvbnMvMjczOC9sYXJnZS9pbWFnZV9fMjg1XzI5LnBuZz8xNTg1MDg4MTg1IiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjg2NzExNzA0fX19XX0_&amp;Signature=eOmKIxzeYcOrrORZEgHQ12O7JbPK8GobMVOcWO-sQAlFAyl9-TwC3wzbOmamFOaE0gpoJy-huoZHyqeSMnJHaepH4E~68TPJbYMAbfgfskr~wYQB4jyP1GgeZAihkRnhe80sMhCEsFmuScLK~oobUcWif~hQEsy8xcKzNmfCPOUeRC31HKwns6JVJnXhB6bz7VdQ4KNMgIg-aOPiHpRlOvYbZ9hwSbaQH7GR8vphAizZk5tw3VIGYFMWlMhpWbovD7h-eB4w8hplqA-yEEIGh8~mm4K~ZIAZ7ODollDYaoo-6hvsDyhpsuzI7p3uKMxeE2I5~vIE2L8UFfcNdyD7yw__&amp;Key-Pair-Id=APKAJINUZDMKZJI5I6DA" class="icon bookmark-icon"/>https://beacon.paloaltonetworks.com/student/award/ekdwiF33LA6HbRkL8tJehKmm</div></div><img src="https://exceed-primary-production-main.s3.amazonaws.com/uploads/organizations/open_graph_images/2738/full/beacon-orange.png" class="bookmark-image"/></a></figure><p id="da15b8a5-b619-4469-9358-41cc32a4f6ab" class="">Fundamentals of SOC (Security Operations Center)</p><figure id="a0bb6a74-5124-46f5-9684-1c5baba19006"><a href="https://beacon.paloaltonetworks.com/student/award/qDoc3bXY9BktA9T6RbwkaQmb" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Beacon</div></div><div class="bookmark-href"><img src="https://cdn.exceedlms.com/uploads/organizations/favicons/2738/large/image__285_29.png?1585088185&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZXhjZWVkbG1zLmNvbS91cGxvYWRzL29yZ2FuaXphdGlvbnMvZmF2aWNvbnMvMjczOC9sYXJnZS9pbWFnZV9fMjg1XzI5LnBuZz8xNTg1MDg4MTg1IiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjg2NzExNzA0fX19XX0_&amp;Signature=eOmKIxzeYcOrrORZEgHQ12O7JbPK8GobMVOcWO-sQAlFAyl9-TwC3wzbOmamFOaE0gpoJy-huoZHyqeSMnJHaepH4E~68TPJbYMAbfgfskr~wYQB4jyP1GgeZAihkRnhe80sMhCEsFmuScLK~oobUcWif~hQEsy8xcKzNmfCPOUeRC31HKwns6JVJnXhB6bz7VdQ4KNMgIg-aOPiHpRlOvYbZ9hwSbaQH7GR8vphAizZk5tw3VIGYFMWlMhpWbovD7h-eB4w8hplqA-yEEIGh8~mm4K~ZIAZ7ODollDYaoo-6hvsDyhpsuzI7p3uKMxeE2I5~vIE2L8UFfcNdyD7yw__&amp;Key-Pair-Id=APKAJINUZDMKZJI5I6DA" class="icon bookmark-icon"/>https://beacon.paloaltonetworks.com/student/award/qDoc3bXY9BktA9T6RbwkaQmb</div></div><img src="https://exceed-primary-production-main.s3.amazonaws.com/uploads/organizations/open_graph_images/2738/full/beacon-orange.png" class="bookmark-image"/></a></figure><figure id="3822bc65-76f2-4b7f-94ad-c2c742755a19"><a href="https://beacon.paloaltonetworks.com/student/award/uztupzgENnUWQCDLpSayXScs" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Beacon</div></div><div class="bookmark-href"><img src="https://cdn.exceedlms.com/uploads/organizations/favicons/2738/large/image__285_29.png?1585088185&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZXhjZWVkbG1zLmNvbS91cGxvYWRzL29yZ2FuaXphdGlvbnMvZmF2aWNvbnMvMjczOC9sYXJnZS9pbWFnZV9fMjg1XzI5LnBuZz8xNTg1MDg4MTg1IiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjg2NzExNzA0fX19XX0_&amp;Signature=eOmKIxzeYcOrrORZEgHQ12O7JbPK8GobMVOcWO-sQAlFAyl9-TwC3wzbOmamFOaE0gpoJy-huoZHyqeSMnJHaepH4E~68TPJbYMAbfgfskr~wYQB4jyP1GgeZAihkRnhe80sMhCEsFmuScLK~oobUcWif~hQEsy8xcKzNmfCPOUeRC31HKwns6JVJnXhB6bz7VdQ4KNMgIg-aOPiHpRlOvYbZ9hwSbaQH7GR8vphAizZk5tw3VIGYFMWlMhpWbovD7h-eB4w8hplqA-yEEIGh8~mm4K~ZIAZ7ODollDYaoo-6hvsDyhpsuzI7p3uKMxeE2I5~vIE2L8UFfcNdyD7yw__&amp;Key-Pair-Id=APKAJINUZDMKZJI5I6DA" class="icon bookmark-icon"/>https://beacon.paloaltonetworks.com/student/award/uztupzgENnUWQCDLpSayXScs</div></div><img src="https://exceed-primary-production-main.s3.amazonaws.com/uploads/organizations/open_graph_images/2738/full/beacon-orange.png" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Google Cybersecurity Professional Certificate - Coursera</summary><div class="indented"><p id="46604262-3757-4517-82a7-ecf0982061d8" class=""><strong>Foundations of Cybersecurity</strong></p><figure id="8379ba6d-b197-491b-814f-34edd3d8ec5e"><a href="https://coursera.org/verify/74EE55AQAQ4W" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Foundations of Cybersecurity</div><div class="bookmark-description">This certificate verifies my successful completion of Google&#x27;s &quot;Foundations of Cybersecurity&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/74EE55AQAQ4W</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~74EE55AQAQ4W/CERTIFICATE_LANDING_PAGE~74EE55AQAQ4W.jpeg" class="bookmark-image"/></a></figure><p id="b1a2e7c0-3209-4daf-8606-ddb0fc788f71" class=""><strong>Play It Safe: Manage Security Risks</strong></p><figure id="f6b58a4b-711e-4c8f-b523-df41261c5ecd"><a href="https://coursera.org/verify/QMLDJDVXXXDC" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Play It Safe: Manage Security Risks</div><div class="bookmark-description">This certificate verifies my successful completion of Google&#x27;s &quot;Play It Safe: Manage Security Risks&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/QMLDJDVXXXDC</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~QMLDJDVXXXDC/CERTIFICATE_LANDING_PAGE~QMLDJDVXXXDC.jpeg" class="bookmark-image"/></a></figure><p id="d0f44cbb-3138-4151-ad1f-3928837666fd" class=""><strong>Connect and Protect: Networks and Network Security</strong></p><figure id="62ff5107-a355-4f8d-8eab-94d55c725042"><a href="https://coursera.org/verify/NEKSNNSZFJQ4" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Connect and Protect: Networks and Network Security</div><div class="bookmark-description">This certificate verifies my successful completion of Google&#x27;s &quot;Connect and Protect: Networks and Network Security&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/NEKSNNSZFJQ4</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~NEKSNNSZFJQ4/CERTIFICATE_LANDING_PAGE~NEKSNNSZFJQ4.jpeg" class="bookmark-image"/></a></figure><p id="b045b8ea-2f34-4531-a6d9-187f3da6cb8c" class=""><strong>Tools of the Trade: Linux and SQL</strong></p><figure id="9f5a8360-794a-49a6-be80-bada627b3f41"><a href="https://coursera.org/verify/MU7TXHJRVZTF" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Tools of the Trade: Linux and SQL</div><div class="bookmark-description">This certificate verifies my successful completion of Google&#x27;s &quot;Tools of the Trade: Linux and SQL&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/MU7TXHJRVZTF</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~MU7TXHJRVZTF/CERTIFICATE_LANDING_PAGE~MU7TXHJRVZTF.jpeg" class="bookmark-image"/></a></figure><p id="c8c0acdb-6ebb-4ba5-a82e-93918fb55aa6" class=""><strong>Assets, Threats, and Vulnerabilities</strong></p><figure id="6c8baea1-5d41-458e-bf12-9db034f9c8fd"><a href="https://coursera.org/verify/ZCRVMFPBR72L" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Assets, Threats, and Vulnerabilities</div><div class="bookmark-description">This certificate verifies my successful completion of Google&#x27;s &quot;Assets, Threats, and Vulnerabilities&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/ZCRVMFPBR72L</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~ZCRVMFPBR72L/CERTIFICATE_LANDING_PAGE~ZCRVMFPBR72L.jpeg" class="bookmark-image"/></a></figure><p id="aac092f5-3916-4938-9a9c-1d3e825f3b05" class="">
+	</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Decryption with Python - Coursera</summary><div class="indented"><figure id="69912b0f-8baf-41d2-b406-6aab17923ff2"><a href="https://coursera.org/verify/23KBXPP9NUAN" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Decryption with Python</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Decryption with Python&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/23KBXPP9NUAN</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~23KBXPP9NUAN/CERTIFICATE_LANDING_PAGE~23KBXPP9NUAN.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>Mining Quality Predict</strong>io<strong>n Using Machine &amp; Deep Learning - Coursera</strong></summary><div class="indented"><figure id="fcfceb5e-31c5-47cd-9a30-f40f7c8c9c88"><a href="https://coursera.org/verify/4TSV35ERRDPF" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Mining Quality Prediction Using Machine &amp; Deep Learning</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Mining Quality Prediction Using Machine &amp; Deep Learning&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/4TSV35ERRDPF</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~4TSV35ERRDPF/CERTIFICATE_LANDING_PAGE~4TSV35ERRDPF.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Exploratory vs Confirmatory Data Analysis using
+	Python - Coursera</summary><div class="indented"><figure id="ed77921d-29bc-42d9-89c0-db65313a3532"><a href="https://coursera.org/verify/BTD8BRU4BEJQ" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Exploratory vs Confirmatory data analysis using Python</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Exploratory vs Confirmatory data analysis using Python&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/BTD8BRU4BEJQ</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~BTD8BRU4BEJQ/CERTIFICATE_LANDING_PAGE~BTD8BRU4BEJQ.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Encryption and Decryption using C++ - Coursera</summary><div class="indented"><figure id="76e23151-019f-41bb-a04f-5765a8dd61f8"><a href="https://coursera.org/verify/UA7B8E9ED8KU" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Encryption and Decryption using C++</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Encryption and Decryption using C++&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/UA7B8E9ED8KU</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~UA7B8E9ED8KU/CERTIFICATE_LANDING_PAGE~UA7B8E9ED8KU.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Data Visualization using Matplotlib and Seaborn in Python - Coursera</summary><div class="indented"><figure id="63232cb2-af43-486b-a4ee-d4f48beb8bdb"><a href="https://coursera.org/verify/DQGLPWDPXQXD" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Python for Data Visualization: Matplotlib &amp; Seaborn</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Python for Data Visualization: Matplotlib &amp; Seaborn&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/DQGLPWDPXQXD</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~DQGLPWDPXQXD/CERTIFICATE_LANDING_PAGE~DQGLPWDPXQXD.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Mastering Data Analysis with Pandas in Python - Coursera</summary><div class="indented"><figure id="9b0929ce-f42a-4a5d-8ec1-8e8d87b8662f"><a href="https://coursera.org/verify/22JFR3VPEH24" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Mastering Data Analysis with Pandas</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Mastering Data Analysis with Pandas&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/22JFR3VPEH24</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~22JFR3VPEH24/CERTIFICATE_LANDING_PAGE~22JFR3VPEH24.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Manage Your Versions with Git - Coursera</summary><div class="indented"><figure id="69af7714-9eca-4b4c-beb9-7a6858e070e8"><a href="https://coursera.org/verify/RX3PHNBCDSG2" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Manage Your Versions with Git (Part I)</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Manage Your Versions with Git (Part I)&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/RX3PHNBCDSG2</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~RX3PHNBCDSG2/CERTIFICATE_LANDING_PAGE~RX3PHNBCDSG2.jpeg" class="bookmark-image"/></a></figure><figure id="277eb40b-dc4a-43c3-a990-46d56e1f4791"><a href="https://coursera.org/verify/8M3G5TX268QF" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Manage Your Versions with Git (Part II)</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Manage Your Versions with Git (Part II)&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/8M3G5TX268QF</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~8M3G5TX268QF/CERTIFICATE_LANDING_PAGE~8M3G5TX268QF.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Introduction to Docker: Build Your Own Portfolio Site - Coursera</summary><div class="indented"><figure id="fcc53d23-3a0b-4d38-88ee-3ec444fa9811"><a href="https://coursera.org/verify/M4YHPSQM97BM" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Introduction to Docker: Build Your Own Portfolio Site</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Introduction to Docker: Build Your Own Portfolio Site&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/M4YHPSQM97BM</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~M4YHPSQM97BM/CERTIFICATE_LANDING_PAGE~M4YHPSQM97BM.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Build React Website - Coursera</summary><div class="indented"><figure id="55337b49-e5fe-4c44-b8b0-1b7cc3c1e2e9"><a href="https://coursera.org/verify/Z3T4MQPZZ57N" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Build Your First React Website</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Build Your First React Website&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/Z3T4MQPZZ57N</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~Z3T4MQPZZ57N/CERTIFICATE_LANDING_PAGE~Z3T4MQPZZ57N.jpeg" class="bookmark-image"/></a></figure><figure id="da852491-b6f9-4a5d-be5e-5d2680340574"><a href="https://coursera.org/verify/L7B7H9KT5692" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Build Your First React Website (Part II)</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Build Your First React Website (Part II)&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/L7B7H9KT5692</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~L7B7H9KT5692/CERTIFICATE_LANDING_PAGE~L7B7H9KT5692.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Shell Scripting with Bash: Basics - Coursera</summary><div class="indented"><figure id="9cab0cfc-0c2a-42f5-b519-43d55fd1d8c4"><a href="https://coursera.org/verify/SZQYZPDQ8YLV" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Shell Scripting with Bash: Basics</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Shell Scripting with Bash: Basics&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/SZQYZPDQ8YLV</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~SZQYZPDQ8YLV/CERTIFICATE_LANDING_PAGE~SZQYZPDQ8YLV.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Python Program From UST - Coursera</summary><div class="indented"><figure id="41df1db7-e74d-4023-b847-1f5637998f18"><a href="https://coursera.org/verify/LW3P64ZZY4Q7" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Completion Certificate for Create Your First Python Program From UST</div><div class="bookmark-description">This certificate verifies my successful completion of Coursera Project Network&#x27;s &quot;Create Your First Python Program From UST&quot; on Coursera</div></div><div class="bookmark-href"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png" class="icon bookmark-icon"/>https://coursera.org/verify/LW3P64ZZY4Q7</div></div><img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~LW3P64ZZY4Q7/CERTIFICATE_LANDING_PAGE~LW3P64ZZY4Q7.jpeg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Game Development with JS - SoloLearn</summary><div class="indented"><figure id="10876461-e518-43dc-99b8-0ab8e1df12af"><a href="https://www.sololearn.com/certificates/CT-WEWBTSFX" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Sololearn: Learn to Code</div><div class="bookmark-description">Join Now to learn the basics or advance your existing skills</div></div><div class="bookmark-href"><img src="https://www.sololearn.com/Images/favicon.ico" class="icon bookmark-icon"/>https://www.sololearn.com/certificates/CT-WEWBTSFX</div></div><img src="https://api2.sololearn.com/v2/certificates/CT-WEWBTSFX/image/png" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Problem Solving - Hackerrank</summary><div class="indented"><p id="ebd388bf-adee-4a35-8374-38cc5abbb8d8" class="">Intermediate</p><figure id="2bd599ee-592c-4e46-b446-9549203fba32"><a href="https://www.hackerrank.com/certificates/37717a36afa2" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">HackerRank</div><div class="bookmark-description">Join over 16 million developers in solving code challenges on HackerRank, one of the best ways to prepare for programming interviews.</div></div><div class="bookmark-href"><img src="https://hrcdn.net/fcore/assets/favicon-ddc852f75a.png" class="icon bookmark-icon"/>https://www.hackerrank.com/certificates/37717a36afa2</div></div><img src="https://downloads.hackerrank.com/certificates/37717a36afa2" class="bookmark-image"/></a></figure><p id="0482cf75-b5a7-459d-a646-8cf334b64be5" class="">Basic</p><figure id="796b2c90-947f-45bd-8889-57637356b5d0"><a href="https://www.hackerrank.com/certificates/c6d5d073e714" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">HackerRank</div><div class="bookmark-description">Join over 16 million developers in solving code challenges on HackerRank, one of the best ways to prepare for programming interviews.</div></div><div class="bookmark-href"><img src="https://hrcdn.net/fcore/assets/favicon-ddc852f75a.png" class="icon bookmark-icon"/>https://www.hackerrank.com/certificates/c6d5d073e714</div></div><img src="https://downloads.hackerrank.com/certificates/c6d5d073e714" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong><strong>Git, GitHub </strong></strong>&amp; <strong><strong>Markdown Crash Course: Learn Git, GitHub &amp; MD - Udemy</strong></strong></summary><div class="indented"><figure id="f66f33aa-e9e9-45ff-9eea-af9587cdbd68"><a href="https://www.udemy.com/certificate/UC-fb32abbe-7030-4389-b98e-a0842271c401/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Udemy Course Completion Certificate</div><div class="bookmark-description">My course completion certificate for &quot;Git, GitHub &amp; Markdown Crash Course: Learn Git, GitHub &amp; MD&quot;</div></div><div class="bookmark-href"><img src="https://www.udemy.com/staticx/udemy/images/v7/apple-touch-icon.png" class="icon bookmark-icon"/>https://www.udemy.com/certificate/UC-fb32abbe-7030-4389-b98e-a0842271c401/</div></div><img src="https://udemy-certificate.s3.amazonaws.com/image/UC-fb32abbe-7030-4389-b98e-a0842271c401.jpg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Object Oriented Programming in C++ - Udemy</summary><div class="indented"><figure id="b1c1fb72-7bfa-4614-9327-0c792d17d514"><a href="https://www.udemy.com/certificate/UC-087cbd4a-222b-434d-ab15-863c0bdd65dc/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Udemy Course Completion Certificate</div><div class="bookmark-description">My course completion certificate for &quot;Object Oriented Programming in C++  &amp;  Interview Preparation&quot;</div></div><div class="bookmark-href"><img src="https://www.udemy.com/staticx/udemy/images/v7/apple-touch-icon.png" class="icon bookmark-icon"/>https://www.udemy.com/certificate/UC-087cbd4a-222b-434d-ab15-863c0bdd65dc/</div></div><img src="https://udemy-certificate.s3.amazonaws.com/image/UC-087cbd4a-222b-434d-ab15-863c0bdd65dc.jpg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">First Steps Into Public Speaking - Udemy</summary><div class="indented"><figure id="a751dc56-2fa6-4221-8287-e813d18d295b"><a href="https://www.udemy.com/certificate/UC-c140d0a3-2620-46d2-bad0-6714a835dfe6/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Udemy Course Completion Certificate</div><div class="bookmark-description">My course completion certificate for &quot;First Steps Into Public Speaking&quot;</div></div><div class="bookmark-href"><img src="https://www.udemy.com/staticx/udemy/images/v7/apple-touch-icon.png" class="icon bookmark-icon"/>https://www.udemy.com/certificate/UC-c140d0a3-2620-46d2-bad0-6714a835dfe6/</div></div><img src="https://udemy-certificate.s3.amazonaws.com/image/UC-c140d0a3-2620-46d2-bad0-6714a835dfe6.jpg" class="bookmark-image"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">The Complete C Programming Course for Beginners - Udemy</summary><div class="indented"><figure id="beb588ae-f541-4518-ac32-8af028d045ea"><a href="https://www.udemy.com/certificate/UC-90f6a139-f75b-4ae7-95c0-0b9d36dea113/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Udemy Course Completion Certificate</div><div class="bookmark-description">My course completion certificate for &quot;The Complete C Programming Course for Beginners&quot;</div></div><div class="bookmark-href"><img src="https://www.udemy.com/staticx/udemy/images/v7/apple-touch-icon.png" class="icon bookmark-icon"/>https://www.udemy.com/certificate/UC-90f6a139-f75b-4ae7-95c0-0b9d36dea113/</div></div><img src="https://udemy-certificate.s3.amazonaws.com/image/UC-90f6a139-f75b-4ae7-95c0-0b9d36dea113.jpg" class="bookmark-image"/></a></figure></div></details><p id="e164da6f-c961-48cc-83b3-23b1a4517377" class="">
+	</p></div></article></body></html>
